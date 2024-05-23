@@ -1,0 +1,165 @@
+/* Style global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('hello word.gif'); /* Correction du chemin de l'image, enlever le backslash */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Logo indépendant */
+.logoP {
+    position: absolute;
+    top: 2em;
+    left: 20px;
+    width: 12em;
+    height: 10em;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin { /* Retirer les commentaires pour activer l'animation */
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5em;
+}
+
+nav ul li:hover {
+    border-bottom: solid 1px white;
+    color: gold;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sous-menus */
+.sous-menu1, .sous-menu2, .sous-menu3, .sous-menu4 {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li:hover .sous-menu1,
+nav ul li:hover .sous-menu2,
+nav ul li:hover .sous-menu3,
+nav ul li:hover .sous-menu4 {
+    display: block;
+}
+
+.sous-menu1 a, .sous-menu2 a, .sous-menu3 a, .sous-menu4 a {
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+}
+
+.sous-menu1 a:hover, .sous-menu2 a:hover, .sous-menu3 a:hover, .sous-menu4 a:hover {
+    color: gold;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding-top: 19em;
+}
+
+.print { color: gold; }
+.iam { color: green; }
+.t1 { color: white; padding-top: 10em; }
+
+#profil {
+    display: block;
+    overflow: hidden;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+}
+
+.profil .T2 {
+    text-align: center;
+    width: 100%;
+}
+
+.imgE {
+    float: left;
+    margin-right: 20px;
+}
+
+.aceof {
+    height: 10em;
+    width: 10em;
+}
+
+.ace {
+    padding-left: 80em;
+}
+
+.Img11 {
+    width: 32em;
+    height: 30em;
+    border-radius: 5px;
+}
+
+.txt {
+    padding-top: 10em;
+    overflow: hidden;
+    padding-right: 5em;
+    padding-left: 3em;
+}
+
+.txt p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.txt p:first-of-type {
+    margin-bottom: 30px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.réseaux img {
+    width: 5em;
+    height: 5em;
+    margin: 0 10px;
+}

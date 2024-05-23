@@ -1,0 +1,1871 @@
+<!DOCTYPE html><html
+lang="fr"><head><meta
+name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta
+http-equiv="X-UA-Compatible" content="IE=edge"/><meta
+http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"UAIOUlFTGwIDXVVQAAED",licenseKey:"6c84580c5c",applicationID:"13942704"};;/*! For license information please see nr-loader-full-1.252.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>D,lF:()=>j,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>O});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const d=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){d(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){d(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const E=(0,n.mF)().o;var _=r(385),S=r(6818);const T={buildEnv:S.Re,customTransaction:void 0,disabled:!1,distMethod:S.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:S.q4,denyList:void 0},R={};function D(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function O(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,T);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.252.1",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>s,IF:()=>u,Nk:()=>f,Tt:()=>c,_A:()=>o,cv:()=>h,iS:()=>a,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>l});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),s=""+o?.location,c=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=c&&"undefined"==typeof SharedWorker,u=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),l=Boolean(n&&window.document.documentMode),f=!!o.navigator?.sendBeacon,h=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>u,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(d(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>d});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),d=function e(t,r){var n={},s={},u={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(d.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),u=c.length,l=0;l<u;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return u[t]=u[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),u=(0,n.fP)();function l(){d.aborted=!0,Object.keys(d.backlog).forEach((e=>{delete d.backlog[e]}))}u.ee||(u.ee=d)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>d,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function d(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>u,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},d=new Set;function u(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(d.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),d.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,ce:()=>o,ek:()=>d,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function d(e){let t=a();return t.initializedAgents?.[e]}function u(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>R,QU:()=>j,Kf:()=>N});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],d=e[c];u(d)||(e[c]=r(d,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return u(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){d([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,u,l;try{a=this,o=[...arguments],u="function"==typeof n?n(o,a):n||{}}catch(t){d([t,"",[o,a,s],u],e)}i(r+"start",[o,a,s],u,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],u,c),e}finally{i(r+"end",[o,a,l],u,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){d([t,r,n,i],e)}s=a}}}function d(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function u(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var A="fetch-",w=A+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,S="prototype";const T={};function R(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(T[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return T[t.debugId]=1,x.forEach((e=>{r(E[S],e,w),r(_[S],e,w)})),r(f._A,"fetch",A),t.on(A+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(A+"done",[null,r],n)}else t.emit(A+"done",[e],n)})),t}const D={},O=["pushState","replaceState"];function j(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||D[t.debugId]++||(D[t.debugId]=1,c(t).inPlace(window.history,O,"-")),t}var I=r(3239);var P=r(50);const C={},k=["open","send"];function N(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(C[r.debugId]++)return r;C[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,d=f._A.setInterval,u="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(u,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",w)}),(0,I.m$)(!1))}catch(e){(0,P.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",w)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,k,"-xhr-",w),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(A):d?d(A):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!d&&!s){var v=1,y=document.createTextNode(v);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===u||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function w(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{J0:()=>l,Mi:()=>u,Vb:()=>o,Ye:()=>s,fm:()=>c,i9:()=>a,t9:()=>i,u0:()=>d});var n=r(7056);const i=r(3325).D.sessionReplay,o=.12,a={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},s=1e6,c=64e3,d={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},u={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},l=5e3},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>d,FN_START:()=>c,PUSH_STATE:()=>u,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,d="fn"+s,u="pushState"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},8862:(e,t,r)=>{"use strict";r.d(t,{j:()=>A});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),d=r(3960),u=r(385),l=r(50),f=r(3081),h=r(8632);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"],g=["setErrorHandler","finished","addToTrace","addRelease"];function m(){const e=(0,h.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var v=r(2825);const b=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let y=!1;function A(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,A=arguments.length>3?arguments[3]:void 0,{init:w,info:x,loader_config:E,runtime:_={loaderType:p},exposed:S=!0}=t;const T=(0,h.gG)();x||(w=T.init,x=T.info,E=T.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,E||{}),x.jsAttributes??={},u.v6&&(x.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,x);const R=(0,i.P_)(e.agentIdentifier),D=[x.beacon,x.errorBeacon];y||(R.proxy.assets&&(b(R.proxy.assets),D.push(R.proxy.assets)),R.proxy.beacon&&D.push(R.proxy.beacon),m(),(0,h.EZ)("activatedFeatures",v.T)),_.denyList=[...R.ajax.deny_list||[],...R.ajax.block_internal?D:[]],(0,i.sU)(e.agentIdentifier,_),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),m=p.get("tracer"),v="api-",b=v+"ixn-";function y(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),x(v,n,!0,o||null===r?"session":void 0)(t,r)}function A(){}g.forEach((e=>{h[e]=x(v,e,!0,"api")})),h.addPageAction=x(v,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=x(v,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,x(v,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return y(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return y("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return y("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new A).get()};var w=A.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(b+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(m.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw m.emit("fn-err",[arguments,this,e],r),e}finally{m.emit("fn-end",[(0,s.z)()],r)}}}};function x(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function E(){r.e(63).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=x(b,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},u.il?(0,d.b2)((()=>E()),!0):E(),h}(e.agentIdentifier,A)),void 0===e.exposed&&(e.exposed=S),y=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({63:"nr-full",110:"nr-full-compressor",379:"nr-full-recorder"}[e]+"-1.252.1.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.1.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={63:"sha512-NrBlflSHG+E8ypKjVzGXtW/Xf0llTI8Zu1jqv/Azc8QH4XcSONP5SP1MgBjCzbrCnblHwUuPNd1bbPqB4cOpqA==",379:"sha512-io5XHh70Jdy2EYRXFd2Z1dzn28m2IqtjTe8yYhCzd0XDM89hjSvyYSv6IFSu3q3fxQqD6VDvQbVW6cJCwCYFkA==",110:"sha512-FeJV2HCRC6GfYcovLwQ5mctwJnSEd+rTZeMHOMH36bocYDxevjtyqCH43PY9ggxphveksO6oypM8yUeQIQNpqw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={29:0,789:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,d=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.1.PROD"]=self["webpackChunk:NRBA-1.252.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(8862);var c=i(8e3),d=i(5938),u=i(3960),l=i(385);class f extends d.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(63).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(63).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,u.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,m.D)(e,w)}function w(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var S=i(5546),T=i(7956),R=i(3239),D=i(7894),O=i(9251);class j extends f{static featureName=O.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,O.t,r),l.il&&((0,T.N)((()=>(0,S.p)("docHidden",[(0,D.z)()],void 0,O.t,this.ee)),!0),(0,R.bP)("pagehide",(()=>(0,S.p)("winPagehide",[(0,D.z)()],void 0,O.t,this.ee))),this.importAggregator())}}var I=i(3081);class P extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var C=i(6660);class k{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class N extends f{static featureName=C.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,S.p)("err",[this.#r(n),(0,D.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,S.p)("ierr",[this.#r(e),(0,D.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,S.p)("err",[this.#n(e),(0,D.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,R.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,S.p)("err",[this.#i(e),(0,D.z)()],void 0,r.D.jserrors,this.ee))}),(0,R.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new k(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new k("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new k(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new k(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new k(e.message,e.filename,e.lineno,e.colno)}}var H=i(2210);let M=1;const z="nr@id";function L(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,H.X)(e,z,(function(){return M++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var B=i(1214),U=i(7243);class q{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),d={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),d.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),Z=["load","error","abort","timeout"],G=Z.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new q(e),this.handler=(e,t,r,n)=>(0,S.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,R.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,R.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function d(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(Z[s],this.listener,(0,R.m$)(!1))}function u(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+L(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+L(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function w(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(Z[o],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,n){e.params.status=n.status;var i=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(n,e.lastSize);if(i&&(e.metrics.rxSize=i),e.sameOrigin){var o=n.getResponseHeader("X-NewRelic-App-Data");o&&((0,S.p)(I.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,r.D.metrics,t),e.params.cat=o.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",d),t.on("xhr-cb-time",u),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",w)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Q=i(3614);const{BST_RESOURCE:J,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=Q;var se=i(7056),ce=i(7144);class de extends f{static featureName=ce.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,ce.t9,r);try{const e=JSON.parse(localStorage.getItem("NRBA_SESSION"));e.sessionReplayMode!==se.IK.OFF?this.#a(e.sessionReplayMode):this.importAggregator({})}catch(e){this.importAggregator({})}}async#a(e){const{Recorder:t}=await Promise.all([i.e(63),i.e(379)]).then(i.bind(i,4136));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier}),this.recorder.startRecording(),this.importAggregator({recorder:this.recorder})}}var ue=i(4649);class le extends f{static featureName=ue.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,ue.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[p,j,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,B.QU)(n),this.eventsEE=(0,B.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(ie,(function(e,t){(0,S.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,S.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,S.p)(J,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},de,K,P,le,N],loaderType:"pro"})})()})();</script><meta
+name="robots" content="max-snippet:160" /><meta
+name="robots" content="max-image-preview:large" /><meta
+name="robots" content="max-video-preview:5" /><title>Lycée Un patio facetté pour traiter la lumière et le son</title><meta
+name="robots" content="index,follow,archive" /><meta
+name="description" content="..." /><meta
+property="og:url" content="https://www.lemoniteur.fr/article/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759" /><meta
+property="og:title" content="Lycée Un patio facetté pour traiter la lumière et le son" /><meta
+property="og:description" content="..." /><meta
+property="og:locale" content="fr_FR" /><meta
+property="og:site_name" content="www.lemoniteur.fr" /><meta
+property="og:type" content="article" /><meta
+name="twitter:card" content="summary_large_image" /><meta
+name="twitter:site" content="@Le_Moniteur" /><meta
+name="twitter:title" content="Lycée Un patio facetté pour traiter la lumière et le son - Le Moniteur" /><meta
+name="twitter:description" content="..." /><meta
+name="DC.title" lang="fr" content="Lycée Un patio facetté pour traiter la lumière et le son" /><meta
+name="DC.Subject" lang="fr" content="Réalisations, Education, Architecture, Paris, France , Professionnels" /><meta
+name="DC.Type" content="article" /><meta
+name="DC.Format" content="text/html" /><meta
+name="DC.Date" content="2007-10-04 16:07:30" /><meta
+name="DC.Publisher" lang="fr" content="www.lemoniteur.fr" /><meta
+name="DC.Creator" lang="fr" content="Le Moniteur" /><meta
+name="date.modified" scheme="W3CDTF" content="2019-09-20 13:44:41" /><meta
+name="DC.Language" scheme="RFC3066" content="fr" /><meta
+name="DC.Description" lang="fr" content="..." /><meta
+name="ipd:siteName" content="Le Moniteur" /><meta
+name="ipd:cmp" content="didomi" /><meta
+name="ipd:pageType" content="Article" /><meta
+name="ipd:xtpages" content="magazine-article-lycee_un_patio_facette_pour_traiter_la_lumiere_et_le_son.1725759" /><meta
+name="ipd:xttags" content="realisations|education|architecture|paris|france|professionnels|grand-paris-ile-de-fra|ile-de-france" /><meta
+name="ipd:udid" content="4m46s41m:1725759:article" /><link
+rel="canonical" href="https://www.lemoniteur.fr/article/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759"/><link
+rel="stylesheet" href="/css/base-module/header-min.IPDIGIT1700230420TIGIDPI.css"><link
+rel="stylesheet" href="/resources/tiny-slider/tiny-slider-min.IPDIGIT1709823597TIGIDPI.css"><link
+rel="stylesheet" href="/css/base-module/themes/lme/edito-page-min.IPDIGIT1708522644TIGIDPI.css"><link
+rel="stylesheet" href="/css/base-module/themes/lme/edito-min.IPDIGIT1708522644TIGIDPI.css"><link
+rel="stylesheet" href="/css/footer-min.IPDIGIT1709823594TIGIDPI.css"><link
+rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png"><link
+rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png"><link
+rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png"><link
+rel="manifest" href="/manifest.json"><link
+rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#E30613"><link
+rel="shortcut icon" href="/images/favicon/favicon.ico"><meta
+name="msapplication-TileColor" content="#E30613"><meta
+name="msapplication-config" content="/images/favicon/browserconfig.xml"><meta
+name="theme-color" content="#E30613"> <script type="application/ld+json">[{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.lemoniteur.fr\/article\/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759"},"headline":"Lyc\u00e9e Un patio facett\u00e9 pour traiter la lumi\u00e8re et le son","datePublished":"2007-10-04T16:07:30+02:00","dateModified":"2019-09-20T13:44:41+02:00","publisher":{"@type":"Organization","name":"Le Moniteur","logo":{"@type":"ImageObject","url":"https:\/\/www.lemoniteur.fr\/images\/base-module\/logo-moniteur.svg"}},"image":["https:\/\/www.lemoniteur.fr\/images\/base-module\/logo-moniteur.svg"],"isAccessibleForFree":"false","articleSection":["R\u00e9alisations","Education","Architecture","Paris","France ","Professionnels"],"author":{"@type":"Person","name":"JACQUES-FRANCK DEGIOANNI"},"hasPart":[{"@type":"WebPageElement","isAccessibleForFree":"false","cssSelector":".editoTextEditor"}]},{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https:\/\/www.lemoniteur.fr\/"},{"@type":"ListItem","position":2,"name":"Lyc\u00e9e Un patio facett\u00e9 pour traiter la lumi\u00e8re et le son","item":"https:\/\/www.lemoniteur.fr\/article\/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759"}]}]</script> <link
+rel="dns-prefetch" href="https://www.googletagmanager.com/"><link
+rel="dns-prefetch" href="https://ts.infoprodata.com/"><link
+rel="dns-prefetch" href="https://ressources.lemoniteur.com/"><link
+rel="dns-prefetch" href="https://tag.audience.acpm.fr/"><link
+rel="dns-prefetch" href="https//cdn.jwplayer.com/"><link
+rel="preload" href="/css/base-module/header-min.IPDIGIT1700230420TIGIDPI.css" as="style"><link
+rel="preload" href="/resources/tiny-slider/tiny-slider-min.IPDIGIT1709823597TIGIDPI.css" as="style"><link
+rel="preload" href="/css/base-module/themes/lme/edito-page-min.IPDIGIT1708522644TIGIDPI.css" as="style"><link
+rel="preload" href="/css/base-module/themes/lme/edito-min.IPDIGIT1708522644TIGIDPI.css" as="style"><link
+rel="preload" href="/css/footer-min.IPDIGIT1709823594TIGIDPI.css" as="style"><link
+rel="preload" href="/resources/jquery/jquery.min.IPDIGIT1709823702TIGIDPI.js" as="script"><link
+rel="preload" href="/resources/jquery-lazyload/jquery.lazyload.min.IPDIGIT1709823702TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/header-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/libs/smarttag-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/lazyload-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/libs/blockadblock-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/trackings-min.IPDIGIT1706093827TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/service-loader-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/resources/jquery-validation/jquery.validate.min.IPDIGIT1709823702TIGIDPI.js" as="script"><link
+rel="preload" href="/resources/tiny-slider/tiny-slider-min.IPDIGIT1709823597TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/edito-jQuery-plugins-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/blog-module/social-sharing-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/social-bar-sticky-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/edito-document-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/comment-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/base-module/alert-tag-document-min.IPDIGIT1700230420TIGIDPI.js" as="script"><link
+rel="preload" href="/js/newsletter-module/form-subscribe-min.IPDIGIT1700230424TIGIDPI.js" as="script"><link
+rel="preload" href="/js/user-module/user.IPDIGIT1700230425TIGIDPI.js" as="script"><link
+rel="preload" href="/js/gam-min.IPDIGIT1709823594TIGIDPI.js" as="script"><link
+rel="preload" href="/js/trackings-min.IPDIGIT1709823594TIGIDPI.js" as="script"></head><body
+data-arche-version="3"
+data-arche-width="1100"
+data-arche-margin="10"
+data-arche-bgcolor="#ffffff"
+data-xiti-secure="1"
+data-xiti-domain="lemoniteur.com"
+data-xiti-cookiedomain=".lemoniteur.fr"
+data-xiti-site="580184"
+data-xiti-siteClone="636882"
+data-xiti-log="ressources"
+data-xiti-logssl="ressources"
+data-xiti-hit="/zv8bycCX"
+data-cmp-notice="Qwx2Hi2F"
+data-cmp-notice-anonymous="kqGFAqrQ"
+data-dmp-network="kjwusq9l"
+data-dmp-site="4m46s41m"
+data-gtm-container="GTM-TB3QFCK"
+data-unbounce-id="259710f66da04a8e8d9ce8db5c2253d5"
+>
+<noscript>
+<iframe
+src="https://www.googletagmanager.com/ns.html?id=GTM-TB3QFCK"
+height="0" width="0" style="display:none; visibility:hidden"></iframe>
+</noscript><div
+class="headerContainerCls headerFull headerFixed"
+data-xiti-chapter2="menu-header"><div
+class="headerContainer headerFull headerFixed theme__lme"
+id="jqHeader"><header
+class="headerContainer__header header"><div
+class="menuIcon jqBtnMenu"
+data-xiti-level2="70"
+data-xiti-name="menu-burger"
+>
+<span
+class="menuIcon__bar"></span>
+<span
+class="menuIcon__bar"></span>
+<span
+class="menuIcon__bar"></span></div><div
+class="header__logo">
+<a
+href="/">
+<img
+src="/images/base-module/logo-moniteur.svg" alt="LeMoniteur" data-no-lazy="true"/>
+</a></div><div
+class="header__userAbo">
+<a
+href="#" class="jqBtnMenuUser header__btn button__user is-displayNone"
+data-user-is-connected="true"
+data-xiti-level2="70"
+data-xiti-name="menu-edito">
+<i
+class="iheadermedia-user-connect"></i>
+<span
+data-user-is-connected="true"
+data-user-label-connected="Mon Compte">
+</span>
+</a><a
+href="/connexion/"
+class="header__btn button__user is-displayNone"
+data-user-is-connected="false"
+data-xiti-level2="70"
+data-xiti-name="picto-bonhomme">
+<i
+class="iheadermedia-user"></i>
+<span>Se connecter</span>
+</a>
+<a
+href="https://www.abonnement.infopro-digital.com/le-moniteur/formule/18#utm_medium=CTA&utm_source=acquisition&utm_campaign=abo-mon&at_format=site_bouton&at_site=[return_url]&at_emplacement_site=header&at_variant=a"
+class="header__btn button__abo is-displayNone"
+data-xiti-level2="70"
+data-xiti-name="picto-couronne"
+target="_blank"       rel="noopener"                    data-user-is-connected="false"
+data-user-is-ip-pass="false"
+>
+<i
+class="iheadermedia-contract is-noMobile"></i>
+<span
+class="is-mobile">S'abonner</span>
+</a>
+<a
+href="https://www.abonnement.infopro-digital.com/le-moniteur/formule/18#utm_medium=CTA&utm_source=acquisition&utm_campaign=abo-mon&at_format=site_bouton&at_site=[return_url]&at_emplacement_site=header&at_variant=a"
+class="header__btn button__abo is-displayNone"
+data-xiti-level2="70"
+data-xiti-name="picto-couronne"
+target="_blank"       rel="noopener"                    data-user-is-connected="true"
+data-user-is-ip-pass="false"
+data-user-is-abomag="false"
+>
+<i
+class="iheadermedia-contract is-noMobile"></i>
+<span
+class="is-mobile">S'abonner</span>
+</a>
+<a
+href="https://abonnements.infopro-digital.com/votre-abonnement-le-moniteur-pass/"
+class="header__btn button__abo is-displayNone"
+data-xiti-level2="70"
+data-xiti-name="picto-couronne"
+target="_blank"       rel="noopener"                    data-user-is-connected="true"
+data-user-is-pass="true"
+>
+<i
+class="iheadermedia-contract is-noMobile"></i>
+<span
+class="is-mobile">Pass</span>
+</a>
+<a
+href="/creation-compte-le-moniteur-pass"
+class="header__btn button__abo is-displayNone"
+data-xiti-level2="70"
+data-xiti-name="picto-couronne"
+data-user-is-connected="false"
+data-user-is-ip-pass="true"
+>
+<i
+class="iheadermedia-contract is-noMobile"></i>
+<span
+class="is-mobile">Créer mon compte</span>
+</a>
+<a
+href="https://abonnements.infopro-digital.com/votre-abonnement-le-moniteur-pass/"
+class="header__btn button__abo is-displayNone"
+data-xiti-level2="70"
+data-xiti-name="picto-couronne"
+target="_blank"       rel="noopener"                    data-user-is-connected="true"
+data-user-is-ip-pass="true"
+>
+<i
+class="iheadermedia-contract is-noMobile"></i>
+<span
+class="is-mobile">Pass</span>
+</a></div></header><div
+class="headerContent__mainMenu mainMenu jqMenu"><div
+class="mainMenu__search" id="jqSearch"><form
+action="/recherche" method="get" id="searchForm" class="searchForm"><div
+id="jqCloseSearch" class="searchForm__close">
+<i
+class="iheadermedia-close-circle"></i></div><div
+class="searchForm__content searchContent jqWrapperSearch">
+<label
+for="inputSearch" class="searchContent__label jqLabelSearch">
+<i
+class="iheadermedia-search"></i>
+<span>Que recherchez-vous ?</span>
+</label>
+<input
+type="text" id="inputSearch" name="keyword" value="" class="searchContent__input jqInputSearch" enterkeyhint="search" />
+<span
+class="searchContent__reset jqResetSearch"><i
+class="iheadermedia-reset"></i></span></div></form></div><nav
+class="mainMenu__thematics jqThematics"><div
+id="jqTheme-20"
+class="thematics__link is-more jqThematicLink"
+data-xiti-name="Territoires">
+Territoires</div><div
+id="jqTheme-21"
+class="thematics__link is-more jqThematicLink"
+data-xiti-name="Secteurs &amp; métiers">
+Secteurs & métiers</div><div
+id="jqTheme-22"
+class="thematics__link is-more jqThematicLink"
+data-xiti-name="Réglementation">
+Réglementation</div><div
+id="jqTheme-23"
+class="thematics__link is-more jqThematicLink"
+data-xiti-name="Transitions">
+Transitions</div><div
+id="jqTheme-24"
+class="thematics__link is-more jqThematicLink"
+data-xiti-name="Médias spécialistes">
+Médias spécialistes</div><div
+id="jqTheme-25"
+class="thematics__link is-more jqThematicLink"
+data-xiti-name="Palmarès &amp; classements">
+Palmarès & classements</div></nav><div
+class="mainMenu__tools">
+<a
+href="#"
+id="jqBtnSearch"
+class="btnTools btnTools--search"
+data-xiti-name="recherche">
+<i
+class="iheadermedia-search"></i>
+<span>Recherche</span>
+</a>
+<a
+href="/archives"
+class="btnTools btnTools--mag"
+data-xiti-name="magazine">
+<i
+class="iheadermedia-magazine"></i>
+<span>Magazine</span>
+</a>
+<a
+href="/inscription-newsletter"
+class="btnTools btnTools--news"
+data-xiti-name="newsletter">
+<i
+class="iheadermedia-newsletter"></i>
+<span>Newsletters</span>
+</a></div><div
+class="headerContainer__top headerTop"><div
+class="headerTop__links">
+<span
+class="headerTop__title">Services</span>
+<a
+class="headerTop__link"
+href="/appels-offres/"
+data-xiti-level2="70"
+data-xiti-name="Appels d&#039;offres"
+>
+Appels d'offres
+</a>
+<a
+class="headerTop__link"
+href="https://evenements.infopro-digital.com/lemoniteur/formations/"
+target="_blank"
+data-xiti-level2="70"
+data-xiti-name="Formations"
+>
+Formations
+</a>
+<a
+class="headerTop__link"
+href="https://evenements.infopro-digital.com/lemoniteur/evenements/"
+target="_blank"
+data-xiti-level2="70"
+data-xiti-name="Événements"
+>
+Événements
+</a>
+<a
+class="headerTop__link"
+href="/construction-et-talents"
+data-xiti-level2="70"
+data-xiti-name="Le BTP recrute"
+>
+Le BTP recrute
+</a>
+<a
+class="headerTop__link"
+href="https://boutique.lemoniteur.fr/?cdorigine=EDZW308O&utm_source=site_media&utm_medium=menu_site_moniteur&utm_campaign=menu_site_moniteur&utm_id=EDZW308O&utm_campaign=EDZW308O"
+target="_blank"
+data-xiti-level2="70"
+data-xiti-name="Éditions"
+>
+Éditions
+</a>
+<a
+class="headerTop__link"
+href="https://www.kheox.fr/"
+target="_blank"
+data-xiti-level2="70"
+data-xiti-name="Kheox"
+>
+Kheox
+</a>
+<a
+class="headerTop__link"
+href="https://www.batiproduits.com/"
+target="_blank"
+data-xiti-level2="70"
+data-xiti-name="Fournisseurs BTP"
+>
+Fournisseurs BTP
+</a>
+<a
+class="headerTop__link"
+href="/nos-webinars/"
+data-xiti-level2="70"
+data-xiti-name="Webinars"
+>
+Webinars
+</a>
+<a
+class="headerTop__link"
+href="https://services.lemoniteur.fr/indices-index"
+target="_blank"
+data-xiti-level2="70"
+data-xiti-name="Indices-Index"
+>
+Indices-Index
+</a>
+<a
+class="headerTop__link"
+href="https://abonnements.infopro-digital.com/le-moniteur-ouvrages-abonnes/#xtor=CS5-204-[site_bouton]-[{return_url}]-[menu]-[a] "
+target="_blank"
+data-xiti-level2="70"
+data-xiti-name="Livres Abonnés"
+>
+Livres Abonnés
+</a></div></div></div><div
+class="headerContent__subMenu subMenu jqThematicPanel"><div
+data-id="jqTheme-20" class="subMenu__panel listThematic is-col5"><div
+class="listThematic__return jqThematicReturn">Territoires</div>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Mon territoire"
+href="/choix-territoire"
+><span>Mon territoire</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Ain"
+href="/ain"
+target="_blank"
+rel=" noopener"                                ><span>Ain</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Alpes-Maritimes"
+href="/alpes-maritimes"
+target="_blank"
+rel=" noopener"                                ><span>Alpes-Maritimes</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Bas-Rhin"
+href="/bas-rhin"
+target="_blank"
+rel=" noopener"                                ><span>Bas-Rhin</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Bouches-du-Rhône"
+href="/bouches-du-rhone"
+target="_blank"
+rel=" noopener"                                ><span>Bouches-du-Rhône</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Essonne"
+href="/essonne"
+target="_blank"
+rel=" noopener"                                ><span>Essonne</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Haute-Garonne"
+href="/haute-garonne"
+target="_blank"
+rel=" noopener"                                ><span>Haute-Garonne</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Hauts-de-Seine"
+href="/hauts-de-seine"
+target="_blank"
+rel=" noopener"                                ><span>Hauts-de-Seine</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Hérault"
+href="/herault"
+target="_blank"
+rel=" noopener"                                ><span>Hérault</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Ille-et-Vilaine"
+href="/ille-et-vilaine"
+target="_blank"
+rel=" noopener"                                ><span>Ille-et-Vilaine</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Landes"
+href="/landes"
+target="_blank"
+rel=" noopener"                                ><span>Landes</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Loire-Atlantique"
+href="/loire-atlantique"
+target="_blank"
+rel=" noopener"                                ><span>Loire-Atlantique</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Moselle"
+href="/moselle"
+target="_blank"
+rel=" noopener"                                ><span>Moselle</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Nord"
+href="/nord"
+target="_blank"
+rel=" noopener"                                ><span>Nord</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Paris"
+href="/paris"
+target="_blank"
+rel=" noopener"                                ><span>Paris</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Puy-de-Dôme"
+href="/puy-de-dome"
+target="_blank"
+rel=" noopener"                                ><span>Puy-de-Dôme</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Pyrénées-Atlantiques"
+href="/pyrenees-atlantiques"
+target="_blank"
+rel=" noopener"                                ><span>Pyrénées-Atlantiques</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Rhône"
+href="/rhone"
+target="_blank"
+rel=" noopener"                                ><span>Rhône</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Seine-et-Marne"
+href="/seine-et-marne"
+target="_blank"
+rel=" noopener"                                ><span>Seine-et-Marne</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Seine-Maritime"
+href="/seine-maritime"
+target="_blank"
+rel=" noopener"                                ><span>Seine-Maritime</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Seine-Saint-Denis"
+href="/seine-saint-denis/"
+><span>Seine-Saint-Denis</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Tarn et Garonne"
+href="/tarn-et-garonne/"
+><span>Tarn et Garonne</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Val-de-Marne"
+href="/val-de-marne/"
+><span>Val-de-Marne</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Val-d&#039;Oise"
+href="/val-d-oise/"
+><span>Val-d'Oise</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Var"
+href="/var/"
+><span>Var</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Vendée"
+href="/vendee/"
+><span>Vendée</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Yvelines"
+href="/yvelines/"
+><span>Yvelines</span></a></div><div
+data-id="jqTheme-21" class="subMenu__panel listThematic is-col2"><div
+class="listThematic__return jqThematicReturn">Secteurs & métiers</div>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Bâtiment"
+href="/batiment/"
+><span>Bâtiment</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Travaux publics"
+href="/travaux-publics/"
+><span>Travaux publics</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Industrie"
+href="/industrie/"
+><span>Industrie</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Immobilier"
+href="/immobilier/"
+><span>Immobilier</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Collectivités locales"
+href="/collectivites-locales/"
+><span>Collectivités locales</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Architecture"
+href="/architecture/"
+><span>Architecture</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Technique"
+href="/technique/"
+><span>Technique</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Paysage"
+href="/paysage/"
+><span>Paysage</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Start-up"
+href="/start-up/"
+><span>Start-up</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Vie du BTP"
+href="/vie-du-btp/"
+><span>Vie du BTP</span></a></div><div
+data-id="jqTheme-22" class="subMenu__panel listThematic is-col2"><div
+class="listThematic__return jqThematicReturn">Réglementation</div>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Toute la réglementation"
+href="/reglementation/"
+><span>Toute la réglementation</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Marchés publics"
+href="/marches-publics/"
+><span>Marchés publics</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Marchés privés"
+href="/marches-prives/"
+><span>Marchés privés</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Droit de l’urbanisme"
+href="/droit-de-l-urbanisme/"
+><span>Droit de l’urbanisme</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Droit de la construction"
+href="/droit-de-la-construction/"
+><span>Droit de la construction</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Droit de l’environnement"
+href="/droit-de-l-environnement/"
+><span>Droit de l’environnement</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Textes officiels"
+href="/veille-jo/"
+><span>Textes officiels</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Jurisprudence"
+href="/service/jurisprudence"
+><span>Jurisprudence</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Indices-Index"
+href="https://services.lemoniteur.fr/indices-index"
+><span>Indices-Index</span></a></div><div
+data-id="jqTheme-23" class="subMenu__panel listThematic is-col3"><div
+class="listThematic__return jqThematicReturn">Transitions</div>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Bas carbone"
+href="/construction-bas-carbone/"
+><span>Bas carbone</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Numérique"
+href="/numerique/"
+><span>Numérique</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Sobriété"
+href="/sobriete/"
+><span>Sobriété</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Économie circulaire"
+href="/economie-circulaire/"
+><span>Économie circulaire</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Rénovation"
+href="/renovation/"
+><span>Rénovation</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Résilience"
+href="/resilience/"
+><span>Résilience</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Biodiversité"
+href="/biodiversite/"
+><span>Biodiversité</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Innovation"
+href="/innovation/"
+><span>Innovation</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Énergies renouvelables "
+href="/energies-renouvelables/"
+><span>Énergies renouvelables </span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Matériaux biosourcés"
+href="/materiaux-biosources/"
+><span>Matériaux biosourcés</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="ZAN"
+href="/zan/"
+><span>ZAN</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Attractivité des métiers"
+href="/attractivite-des-metiers/"
+><span>Attractivité des métiers</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Écologie"
+href="/transition-ecologique/"
+><span>Écologie</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Décarbonation"
+href="/decarbonation/"
+><span>Décarbonation</span></a></div><div
+data-id="jqTheme-24" class="subMenu__panel listThematic is-col2"><div
+class="listThematic__return jqThematicReturn">Médias spécialistes</div>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Le Moniteur Matériels"
+href="https://www.lemoniteurmateriels.fr/"
+target="_blank"
+rel=" noopener"                                ><span>Le Moniteur Matériels</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Le Moniteur des Artisans"
+href="/artisans/"
+><span>Le Moniteur des Artisans</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Le Moniteur International"
+href="/international/"
+><span>Le Moniteur International</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Négoce"
+href="/negoce/"
+><span>Négoce</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Stores et Fermetures"
+href="/stores-et-fermetures/"
+target="_blank"
+rel=" noopener"                                ><span>Stores et Fermetures</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Les Cahiers Techniques du Bâtiment"
+href="https://www.cahiers-techniques-batiment.fr/"
+target="_blank"
+rel=" noopener"                                ><span>Les Cahiers Techniques du Bâtiment</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="AMC"
+href="https://www.amc-archi.com/"
+target="_blank"
+rel=" noopener"                                ><span>AMC</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Opérations immobilières"
+href="/operations-immobilieres/"
+><span>Opérations immobilières</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Club Déco"
+href="/club-deco/"
+><span>Club Déco</span></a></div><div
+data-id="jqTheme-25" class="subMenu__panel listThematic is-col1"><div
+class="listThematic__return jqThematicReturn">Palmarès & classements</div>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Top 1000 des entreprises de BTP"
+href="/classement/classement-btp"
+><span>Top 1000 des entreprises de BTP</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Top 20 des promoteurs immobiliers"
+href="/classement/classement-promoteurs-immobiliers"
+><span>Top 20 des promoteurs immobiliers</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Équerre d’argent"
+href="/equerre-d-argent/"
+><span>Équerre d’argent</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Classement des promoteurs"
+href="/classement-promoteurs-immobilier/"
+><span>Classement des promoteurs</span></a>
+<a
+class="listThematic__item linkSimple"
+data-xiti-name="Prix Moniteur de la construction"
+href="/prix-moniteur-de-la-construction-pmc/"
+><span>Prix Moniteur de la construction</span></a></div></div><div
+class="headerContent__menuUser menuUser jqMenuUser"><div
+class="menuUser__infoUser"><div
+class="infoUser__text">Bienvenue</div><div
+class="infoUser__name" data-user-is-connected="true"
+data-user-label-connected=""></div></div><div
+class="menuUser__linksMo">
+<a
+class="linksUser"
+href="/mes-avantages"
+data-xiti-level2="70"
+data-xiti-name="Mes avantages"
+>
+<span>
+<i
+class="iheadermedia-contract"></i>
+Mes avantages
+</span>
+</a>
+<a
+class="linksUser"
+href="/mes-newsletters"
+data-xiti-level2="70"
+data-xiti-name="Mes newsletters"
+>
+<span>
+<i
+class="iheadermedia-newsletter"></i>
+Mes newsletters
+</span>
+</a>
+<a
+class="linksUser"
+href="/archives/moniteur/2024/1"
+data-xiti-level2="70"
+data-xiti-name="Mes magazines"
+>
+<span>
+<i
+class="iheadermedia-magazine"></i>
+Mes magazines
+</span>
+</a>
+<a
+class="linksUser"
+href="/mon-profil"
+data-xiti-level2="70"
+data-xiti-name="Mes informations"
+>
+<span>
+<i
+class="iheadermedia-infos"></i>
+Mes informations
+</span>
+</a>
+<a
+class="linksUser"
+href="/mon-actualite/"
+data-xiti-level2="70"
+data-xiti-name="Mon fil d&#039;actualité personnalisé"
+>
+<span>
+<i
+class="iheadermedia-cloche"></i>
+Mon fil d'actualité personnalisé
+</span>
+</a>
+<a
+class="linksUser"
+href="/service/jurisprudence"
+data-xiti-level2="70"
+data-xiti-name="Analyses de Jurisprudences"
+>
+<span>
+Analyses de Jurisprudences
+</span>
+</a>
+<a
+class="linksUser"
+href="https://services.lemoniteur.fr/indices-index"
+target="_blank"
+rel=" noopener"                                   data-xiti-level2="70"
+data-xiti-name="Indices-Index"
+>
+<span>
+Indices-Index
+</span>
+</a>
+<a
+class="linksUser"
+href="https://abonnements.infopro-digital.com/le-moniteur-ouvrages-abonnes/#xtor=CS5-204-[site_bouton]-[{return_url}]-[menu]-[a] "
+target="_blank"
+rel=" noopener"                                   data-xiti-level2="70"
+data-xiti-name="Ouvrages Abonnés"
+>
+<span>
+Ouvrages Abonnés
+</span>
+</a>
+<a
+class="linksUser"
+href="/admin-pass/users"
+data-hcub-service="916"               data-xiti-level2="70"
+data-xiti-name="Mon contrat Pass"
+>
+<span>
+Mon contrat Pass
+</span>
+</a></div><a
+class="linksUser menuUser__help"
+href="/contact"
+data-xiti-level2="70"
+data-xiti-name="Besoin d'aide ?"
+>
+<span><i
+class="iheadermedia-help"></i> Besoin d'aide ?</span>
+</a><a
+class="menuUser__btn"
+href="/user/logout"
+data-xiti-level2="70"
+data-xiti-name="Déconnexion"
+>
+<i
+class="iheadermedia-signout"></i> Déconnexion
+</a></div></div></div><div
+class="overlay"></div><div
+data-ad-id="bannerArche"
+class="jqGoogleAdServe "
+></div><article
+class="editoContainerType1 is-paddingTop-20 "><div
+class="is-posRelative"><div
+class="editoNavType3 editoNavType3--blockMD is-marginTop-40 is-marginTop-30-M"><blockquote
+class="editoTagsContainerType2 is-margin-0"
+data-xiti-chapter2="nav-haut-page-tag"><div
+class="editoTagDivider">
+<a
+class="editoTagType5 is-uppercase"
+rel="tag"
+href="/realisations/"
+data-xiti-name="realisations">
+Réalisations
+</a></div><div
+class="editoTagDivider">
+<a
+class="editoTagType5 is-uppercase"
+rel="tag"
+href="/education/"
+data-xiti-name="education">
+Education
+</a></div><div
+class="editoTagDivider">
+<a
+class="editoTagType5 is-uppercase"
+rel="tag"
+href="/architecture/"
+data-xiti-name="architecture">
+Architecture
+</a></div></blockquote><div
+class="editoParutionFolder"></div></div></div><div
+class="edito-page"><h1 class="editoTitleType8 is-marginTop-20 is-marginBottom-0">Lycée Un patio facetté pour traiter la lumière et le son</h1><div
+class="epSpacerT-60"></div><div
+class="epLytBlocArticle2col"><div
+class="epLytBlocArticle2col__left"><div
+class="epMetaData --close "><div
+class="epMetaData__head"><div
+class="epMetaData__head-open">
+Réservé aux abonnés</div></div><div
+class="epMetaData__content"><div
+class="epMetaData__content__infos"><p
+class="epMetaData__content__infos--default">
+<span
+class="epMetaData__content__infos-name mb-2">JACQUES-FRANCK DEGIOANNI</span></p><div
+class="epMetaData__content__infos--specialist">
+<img
+src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-original="/images/logo-moniteur.svg"
+alt="Le Moniteur" /></div><p
+class="mt-3">
+<span
+class="epMetaData__content__infos-dateValue mt-2">
+<time
+datetime="2007-10-04T16:07:30">
+04 octobre 2007
+</time>
+</span><span
+class="epAntiSlash"> <span
+class="epAntiSlash__caractere">\</span></span>
+<span
+class="epMetaData__content__infos-dateValue">16h07</span></p></div><div
+class="epMetaData__separator"></div><div
+class="epMetaData__content__infos">
+<span> <i
+class="ep-icon-clock --FSize20 --valign-2"></i></span>
+<span
+class="epMetaData__content__infos-dateValue">
+1
+min. de lecture
+</span></div>
+<a
+href="#"
+data-eppanel-open="tags"
+data-id-document="1725759"
+data-id-service="801"
+data-redirect-url="/connexion/?urlRedirect=%2Farticle%2Flycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759%3Fopen_panel%3Dtags&service=801"
+data-xiti-name="ajouter_a_mon_actualite"
+data-xiti-chapter1="article/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759"
+data-xiti-chapter2="Newsletter sur tag"
+data-xiti-chapter3="Article"
+data-xiti-type="action"
+class="epMetaData__btPanelTags is-displayFlex is-flexAlignEnd editoLinkType15 is-marginBottom-20">
+<button
+class="editoButtonType7 editoButtonType7--solidYellow editoButtonType7--iconOnly"><i
+class="edito-icon-new --FSize20"></i></button>
+<span
+class="editoButtonType7__text epBtnLink --anim">
+<span
+class="is-displayBlock">Ajouter </span>à Mon actualité
+</span>
+</a><div
+class="tagsPanel"><div
+class="tagsPanelOverlay is-displayNone" id="jsTagsPanelOverlay"></div><div
+class="tagsPanelContent panelContent"><h2 class="editoTitleType1">Mon actualité <b>personnalisable</b></h2><p
+class="editoTextType1">
+<b>Profitez à tout moment des informations clés selon vos intérêts.</b></p><p
+class="editoTextType1">
+Sélectionnez les thèmes qui vous intéressent :</p><div
+class="panelContent__wrapper">
+<button
+class="editoLinkType9" selected>Label tag qualité</button>
+<button
+class="editoLinkType9">Label tag principal</button>
+<button
+class="editoLinkType9 is-selected">Label tag précision</button>
+<button
+class="editoLinkType9">Label tag qualité</button>
+<button
+class="editoLinkType9">Label tag principal</button>
+<button
+class="editoLinkType9">Label tag précision</button>
+<button
+class="editoLinkType9">Label tag qualité</button>
+<button
+class="editoLinkType9">Label tag principal</button>
+<button
+class="editoLinkType9">Label tag principal</button>
+<button
+class="editoLinkType9">Label tag précision</button>
+<button
+class="editoLinkType9">Label tag qualité</button>
+<button
+class="editoLinkType9">Label tag principal</button>
+<button
+class="editoLinkType9">Label tag principal</button></div><div
+class="panelContent__footer">
+<a
+href="#" class="editoLinkType4"><i
+class="edito-icon-engrenage"></i> Gérer mes thèmes favoris</a>
+<button
+class="editoLinkType3 editoLinkType3--noArrow">
+<span
+class="editoLinkType3__text">Valider la sélection</span>
+</button></div></div></div></div><div
+class="epMetaData__head-mbl"><div
+class="epMetaData__head-mbl__status">
+<span
+class="epIconMain --iconMain-lg">
+<i
+class="epIconMain__fontIcon edito-icon-Main-abo"></i>
+</span>
+<span
+class="epIconMain --iconMain-lg reservedSubs">
+Réservé aux abonnés
+</span></div><div
+class="epMetaData__head-mbl__content"><div
+class="epMetaData__content__infos --mbl">
+<span> <i
+class="ep-icon-clock --FSize20 --valign-2"></i></span>
+<span
+class="epMetaData__content__infos-dateValue">
+1 min.
+</span>
+<span
+class="epMetaData__content__infos-dateValue epMetaData--verbose">de lecture</span></div></div></div><div
+class="epMetaData__content-mbl mt-2"><div><p
+class="epMetaData__content-mbl--default">
+<span
+class="epMetaData__content__infos-name mb-2">JACQUES-FRANCK DEGIOANNI</span></p><p
+class="epMetaData__content-mbl--specialist">
+<img
+src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-original="/images/logo-moniteur.svg"
+alt="Le Moniteur" /></p></div><div>
+<span
+class="epMetaData__content__infos-dateValue mt-2">
+<time
+datetime="2007-10-04T16:07:30">
+04 octobre 2007
+</time>
+</span><span
+class="epAntiSlash"> <span
+class="epAntiSlash__caractere">\</span></span>
+<span
+class="epMetaData__content__infos-dateValue">16h07</span></div></div><div
+class="epMetaData__content-mbl mt-2"></div><div
+class="epMetaData__content-mbl mt-2">
+<a
+href="#"
+data-eppanel-open="tags"
+data-id-document="1725759"
+data-id-service="801"
+data-redirect-url="/connexion/?urlRedirect=%2Farticle%2Flycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759%3Fopen_panel%3Dtags&service=801"
+data-xiti-name="ajouter_a_mon_actualite"
+data-xiti-chapter1="article/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759"
+data-xiti-chapter2="Newsletter sur tag"
+data-xiti-chapter3="Article"
+data-xiti-type="action"
+class="epMetaData__btPanelTags is-displayFlex is-flexAlignEnd editoLinkType15 is-marginBottom-20 --mbl">
+<button
+class="editoButtonType7 editoButtonType7--solidYellow editoButtonType7--iconOnly"><i
+class="edito-icon-new --FSize20"></i></button>
+<span
+class="editoButtonType7__text">
+Ajouter à mon actualité
+</span>
+</a></div></div><div
+class="editoSocialBar editoSocialBar--vertical editoSocialBar--top editoSocialBar--fixed" id="jsSocialBarSticky">
+<span
+class="editoSocialBar__label">Partager</span><ul
+class="editoSocialBar__list"><li
+class="editoSocialBar__item" data-title="Lycée Un patio facetté pour traiter la lumière et le son">
+<a
+class="jqtwitter editoSocialBar__link editoSocialBar__link--twitter"
+data-title="Lycée Un patio facetté pour traiter la lumière et le son" href="#">
+<i
+class="edito-icon-twitter"></i>
+</a></li><li
+class="editoSocialBar__item">
+<a
+class="jqlinked-in editoSocialBar__link editoSocialBar__link--linkedin"
+data-title="Lycée Un patio facetté pour traiter la lumière et le son" href="#">
+<i
+class="edito-icon-linkedIn"></i>
+</a></li><li
+class="editoSocialBar__item">
+<a
+class="jqEmail editoSocialBar__link editoSocialBar__link--mail"
+data-title="Lycée Un patio facetté pour traiter la lumière et le son" href="#">
+<i
+class="edito-icon-email"></i>
+</a></li></ul></div></div><div
+class="epLytBlocArticle2col__right"><div
+class="editoTextEditor"><div
+class="articleContent"><div
+data-ad-id="pave"
+class="jqGoogleAdServe "
+></div><p>Après trente mois de travaux en site occupé, le lycée professionnel Gustave-Ferrié à Paris (Xe) a rouvert ses portes, métamorphosé par les architectes François Gruson et Lynn F. Pennec. L’intervention sur cet établissement massif, formé de quatre gros bâtiments, visait principalement à rénover et restructurer l’ensemble des locaux et circuits de fonctionnement : salles de cours et de travaux pratiques, logement du gardien et pavillon d’accueil, gymnase, locaux de restauration, espaces extérieurs et flux de circulation. « C’est un bâtiment proche de l’architecture cubiste tchèque des années vingt, explique François Gruson, ce qui est plutôt original dans le contexte ! Les façades affichent une grande sobriété d’écriture qui s’appuie sur la répétition d’un motif d’ouverture presque carré. »</p><p>Luminosité, acoustiqueet hygiène. L’approche s’est voulue « pragmatique et adaptée à la diversité des situations ». Ainsi les façades extérieures ont-elles été restaurées à l’identique. Les principaux escaliers ont été conservés, remis en valeur ou restitués dans leur état d’origine. Le logement de fonction (sur le toit-terrasse) a été repensé dans sa distribution intérieure et « emballé » de zinc et de laine minérale pour assurer son étanchéité et son isolation, et l’inscrire clairement en tant qu’élément de toiture.</p><p>L’intervention la plus importante a consisté en la modification des façades intérieures du patio planté central. Objectif : améliorer la luminosité, l’acoustique et l’hygiène. Les architectes ont mis en œuvre un bardage en aluminium (Reynobond) laqué blanc, au profil d’onde savamment dessiné. Les facettes imaginées par les concepteurs s’inspirent en effet des ressauts d’une lentille de Fresnel (une optique inventée par Augustin Fresnel pour équiper les phares de signalisation marine), afin de réfléchir et conduire la lumière par des renvois successifs vers le bas du patio. Ce profil contribue également, à l’aide de panneaux perforés incluant un matelas de laine minérale, à traiter la réverbération à l’intérieur du patio, en panachant les réflexions sonores de manière diffuse. Dernier avantage, les surfaces lisses et inclinées interdisent aux pigeons de s’y poser ou de s’y accrocher en souillant les lieux de leurs déjections.</p><div
+data-ad-id="inread"
+class="jqGoogleAdServe "
+></div><div
+class="epMediaImg --mediaDefault"><figure
+class="epMediaImg__fig"><div
+class="epMediaImg__fig__img-canvas">
+<img
+class="epMediaImg__fig__img-canvas__img"
+src="data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 520 330&quot;&gt;&lt;/svg&gt;" data-original="/mediatheque/9/7/1/000350179_520x330_c.jpg" width="520" height="330"
+alt="PHOTO - ARCHI 19 LYCEE 3.eps"><div
+class="epMediaImg__fig__img-canvas__copyright">&copy;</div></div><figcaption
+class="epMediaImg__fig__caption">
+PHOTO - ARCHI 19 LYCEE 3.eps</figcaption></figure></div><div
+class="epMediaImg --mediaDefault"><figure
+class="epMediaImg__fig"><div
+class="epMediaImg__fig__img-canvas">
+<img
+class="epMediaImg__fig__img-canvas__img"
+src="data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 520 330&quot;&gt;&lt;/svg&gt;" data-original="/mediatheque/4/8/1/000350184_520x330_c.jpg" width="520" height="330"
+alt="PHOTO - ARCHI 19 LYCEE 1.eps"><div
+class="epMediaImg__fig__img-canvas__copyright">&copy;</div></div><figcaption
+class="epMediaImg__fig__caption">
+PHOTO - ARCHI 19 LYCEE 1.eps</figcaption></figure></div><div
+class="epMediaImg --mediaDefault"><figure
+class="epMediaImg__fig"><div
+class="epMediaImg__fig__img-canvas">
+<img
+class="epMediaImg__fig__img-canvas__img"
+src="data:image/svg+xml,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 520 330&quot;&gt;&lt;/svg&gt;" data-original="/mediatheque/9/8/1/000350189_520x330_c.jpg" width="520" height="330"
+alt="PHOTO - ARCHI LYCEE 4.eps"><div
+class="epMediaImg__fig__img-canvas__copyright">&copy; PHOTOS : DAVID BOUREAU</div></div><figcaption
+class="epMediaImg__fig__caption">
+PHOTO - ARCHI LYCEE 4.eps</figcaption></figure></div><blockquote
+class="editoOutOfText">
+<span
+class="editoDividerType3 editoDividerType3--lagoon"></span><div
+class="editoOutOfText__content">
+Fiche technique<p>Maîtrise d’ouvrage : région Ile-de-France</p><p>Mandataire : Semea 15</p><p>Maîtrise d’œuvre : Opera Architectes (François Gruson, Lynn F. Pennec, Bertrand Verney), architecte mandataire. Igeco, BET. PHI2, BET cuisines.</p><p>Entreprise générale : Bouygues Bâtiment Ile-de-France/Ouvrages Publics</p><p>Coût des travaux : 9, 397 millions d’euros HT (soit environ 1 110 euros/m2)</p><p>Surface totale : 8 763 m2 HON</p></div>
+<span
+class="editoDividerType3 editoDividerType3--lagoon"></span></blockquote></div></div></div></div><div
+id="jsLimitSocialBarSticky"></div><div
+class="epPanelTags is-marginTop-60" data-eppanel-target="tags"><div
+class="epPanelOverlay is-displayNone" data-eppanel-overlay="tags"></div><form
+action="#" method="post" class="epPanel" data-eppanel="tags"
+data-xiti-chapter2="Newsletter sur tag"
+data-xiti-chapter3="Article"><div
+class="epPanel__head"><div
+class="epPanel__head__top">
+<span
+class="epPanel__head__top-title">Mon actualité <span
+class="is-fontOpenSansBold">personnalisable</span></span><div
+class="epPanel__head__top-btnClose" data-eppanel-close="tags">
+<i
+class="ep-icon-cross"></i></div></div><div
+class="epDelimiter --toLeft --UNRed"><div
+class="epDelimiter__asset is-marginTop-15 is-marginBottom-40"></div></div></div><div
+class="epPanel__content"><div
+class="epPanelTags__main epPanel__content__main"><p
+class="epPanel__content__intro">
+<span
+class="is-fontArimoBold">Suivez vos informations clés avec votre newsletter et votre fil d'actualité personnalisable.</span><br>Choisissez vos thèmes favoris parmi ceux de cet article :</p><div
+class="epPanelTags__tagsList epInputCheckbox --bt --bt-only"><div
+class="epInputCheckbox__list epPanelTagsList"
+data-xiti-chapter1="article/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759"
+data-xiti-type="action"
+data-xiti-level2="2">
+<label
+data-generated-path="realisations" class="epPanelTagsList__item">
+<input
+type="checkbox" name="tag_id" id="tag_27" value="27" data-xiti-name="realisations">
+<span
+class="epInputCheckbox__label">Réalisations</span>
+</label>
+<label
+data-generated-path="education" class="epPanelTagsList__item">
+<input
+type="checkbox" name="tag_id" id="tag_273" value="273" data-xiti-name="education">
+<span
+class="epInputCheckbox__label">Education</span>
+</label>
+<label
+data-generated-path="architecture" class="epPanelTagsList__item">
+<input
+type="checkbox" name="tag_id" id="tag_24" value="24" data-xiti-name="architecture">
+<span
+class="epInputCheckbox__label">Architecture</span>
+</label>
+<label
+data-generated-path="paris" class="epPanelTagsList__item">
+<input
+type="checkbox" name="tag_id" id="tag_212" value="212" data-xiti-name="paris">
+<span
+class="epInputCheckbox__label">Paris</span>
+</label>
+<label
+data-generated-path="france" class="epPanelTagsList__item">
+<input
+type="checkbox" name="tag_id" id="tag_243" value="243" data-xiti-name="france">
+<span
+class="epInputCheckbox__label">France </span>
+</label>
+<label
+data-generated-path="professionnels" class="epPanelTagsList__item">
+<input
+type="checkbox" name="tag_id" id="tag_439" value="439" data-xiti-name="professionnels">
+<span
+class="epInputCheckbox__label">Professionnels</span>
+</label></div></div><p
+class="epPanelTags__msgTagsAllSelected">Tous les thèmes de cet article sont déjà sélectionnés.</p></div><ul
+class="epPanelTags__msgOk editoListType1"><li
+class="editoListType1__item"><b>Vos thèmes favoris ont bien été mis à jour.</b></li></ul></div><div
+class="epPanel__footer --bottomFixed"><div
+class="epPanel__footer__wrapper">
+<a
+class="epPanelTags__settings" href="/mon-actualite-personnalisable" data-user-is-connected="true"
+data-xiti-name="gerer_mes_themes"
+data-xiti-chapter1="mon-actualite-personnalisable"
+data-xiti-type="navigation"
+data-xiti-level2="70">
+<i
+class="edito-icon-gear"></i>&nbsp;Gérer mes thèmes favoris
+</a><div
+class="epPanel__footer__zone">
+<button
+class="epBtnIcon --primary" role="button" type="submit" disabled="disabled"
+data-xiti-name="valider_la_selection"
+data-xiti-chapter1="article/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759"
+data-xiti-type="action">
+<span
+class="epBtnIcon__label">Valider la sélection</span>
+</button>
+<button
+data-eppanel-close="tags" class="epPanelTags__btClose epBtnIcon --primary" role="button" type="button">
+<span
+class="epBtnIcon__label">Fermer</span>
+</button></div></div></div></form></div><div
+class="editoContainerCommentLink is-marginTop-60"><div
+class="editoSocialBar">
+<span
+class="editoSocialBar__label">Partager</span><ul
+class="editoSocialBar__list"><li
+class="editoSocialBar__item" data-title="Lycée Un patio facetté pour traiter la lumière et le son">
+<a
+class="jqtwitter editoSocialBar__link editoSocialBar__link--twitter"
+data-title="Lycée Un patio facetté pour traiter la lumière et le son" href="#">
+<i
+class="edito-icon-twitter"></i>
+</a></li><li
+class="editoSocialBar__item">
+<a
+class="jqlinked-in editoSocialBar__link editoSocialBar__link--linkedin"
+data-title="Lycée Un patio facetté pour traiter la lumière et le son" href="#">
+<i
+class="edito-icon-linkedIn"></i>
+</a></li><li
+class="editoSocialBar__item">
+<a
+class="jqEmail editoSocialBar__link editoSocialBar__link--mail"
+data-title="Lycée Un patio facetté pour traiter la lumière et le son" href="#">
+<i
+class="edito-icon-email"></i>
+</a></li></ul></div></div></div><div
+data-ad-id="infeed"
+class="jqGoogleAdServe is-infeed-pub is-marginTop-60"
+></div><section
+class="is-alignCenter is-paddingTB-40"
+data-xiti-chapter2="sous-article-tag">
+<span
+class="editoDividerType3 editoDividerType3--center is-marginBottom-40"></span><h2 class="editoTitleType10 is-marginTop-0 is-marginBottom-10">Sujets <b>associés</b></h2>
+<a
+class="editoLinkType9 is-marginTop-10 is-marginRight-10"
+href="/realisations/"
+rel="tag"
+data-xiti-name="realisations">Réalisations</a>
+<a
+class="editoLinkType9 is-marginTop-10 is-marginRight-10"
+href="/education/"
+rel="tag"
+data-xiti-name="education">Education</a>
+<a
+class="editoLinkType9 is-marginTop-10 is-marginRight-10"
+href="/architecture/"
+rel="tag"
+data-xiti-name="architecture">Architecture</a>
+<a
+class="editoLinkType9 is-marginTop-10 is-marginRight-10"
+href="/paris/"
+rel="tag"
+data-xiti-name="paris">Paris</a>
+<a
+class="editoLinkType9 is-marginTop-10 is-marginRight-10"
+href="/france/"
+rel="tag"
+data-xiti-name="france">France </a>
+<a
+class="editoLinkType9 is-marginTop-10 is-marginRight-10"
+href="/professionnels/"
+rel="tag"
+data-xiti-name="professionnels">Professionnels</a>
+<span
+class="editoDividerType3 editoDividerType3--center is-marginTop-40"></span></section></article><div
+class="editoContainerType3"
+data-xiti-chapter1="Evenements"
+data-xiti-chapter2="sous-home-secto-bandeau"><div
+class="editoContainerType1"><p
+class="editoTitleType1 editoTitleType1--main editoTitleType1--white">
+LES ÉVÉNEMENTS <b
+class="is-lineBreak-Xs">LE MONITEUR</b></p><div
+class="editoCarouselType1"><div
+class="row" id="jsEventsCarousel"><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://techshowforconstruction.eventmaker.io/"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Conférence"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/0/1/8/000121810_300x162_c.png" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Conférence</span><p
+class="editoCardType13__title">Techshow for Construction</p><p
+class="editoCardType13__date">
+<span>25&nbsp;Juin&nbsp;2024</span>
+<span>Paris</span></p><p
+class="editoCardType13__subtitle">Le hub de l&rsquo;innovation num&eacute;rique &amp; technologique ! Deuxi&egrave;me &eacute;dition</p><p
+class="editoCardType13__label">Tech et Construction</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://evenements.infopro-digital.com/lemoniteur/evenement-journee-de-l-achat-public-2024-p-17078"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Conférence"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/2/1/8/000121812_300x162_c.jpg" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Conférence</span><p
+class="editoCardType13__title">JOURN&Eacute;E DE L&rsquo;ACHAT PUBLIC</p><p
+class="editoCardType13__date">
+<span>26&nbsp;Mars&nbsp;2024</span>
+<span>&Agrave; Paris et en ligne</span></p><p
+class="editoCardType13__subtitle">Le tour des ajustements &agrave; r&eacute;aliser et des exemples &agrave; suivre pour rester &agrave; la pointe en 2024 : attirer des entreprises, &ecirc;tre &agrave; jour sur les obligations vertes, suivre les apports &eacute;ventuels de l&rsquo;IA, etc.</p><p
+class="editoCardType13__label">March&eacute;s Publics et Priv&eacute;s</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://evenements.infopro-digital.com/lemoniteur/evenement-les-revolutions-du-point-de-vente-negoce-2024-p-17079"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Conférence"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/5/0/8/000121805_300x162_c.jpg" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Conférence</span><p
+class="editoCardType13__title">Les r&eacute;volutions du point de vente n&eacute;goce</p><p
+class="editoCardType13__date">
+<span>23&nbsp;Mai&nbsp;2024</span>
+<span>Paris</span></p><p
+class="editoCardType13__subtitle">R&eacute;inventez le point de vente !</p><p
+class="editoCardType13__label">N&eacute;goce</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://evenements.infopro-digital.com/lemoniteur/evenement-batir-pour-le-climat-2024-p-17118"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Conférence"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/3/9/9/000121993_300x162_c.png" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Conférence</span><p
+class="editoCardType13__title">BATIR POUR LE CLIMAT</p><p
+class="editoCardType13__date">
+<span>5&nbsp;Novembre&nbsp;2024</span>
+<span>Paris</span></p><p
+class="editoCardType13__subtitle">Les solutions de la construction durable</p><p
+class="editoCardType13__label">Techniques de Construction et de R&eacute;habilitation</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a></div></div></div><p
+class="is-alignCenter is-marginTop-40 is-marginBottom-0">
+<a
+class="editoLinkType1" data-xiti-name="Tous les événements" href="https://evenements.infopro-digital.com/lemoniteur/evenements/">
+Tous les événements
+</a></p></div><div
+class="editoContainerType1 editoContainerType1 is-paddingTop-60 is-paddingTop-40-M"
+data-xiti-chapter1="Formations"
+data-xiti-chapter2="sous-home-secto-bandeau"><p
+class="editoTitleType1 editoTitleType1--main is-uppercase">
+Les formations <b
+class="is-lineBreak-Xs">LE MONITEUR</b></p><div
+class="editoCarouselType1 editoCarouselType1--white"><div
+class="row" id="jsFormationsCarousel"><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://evenements.infopro-digital.com/lemoniteur/formation-conduite-de-chantiers-voirie-et-reseaux-de-distribution-p-1789"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Formation"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/1/3/5/000118531_300x162_c.jpg" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Formation</span><p
+class="editoCardType13__title">Conduite de chantiers Voirie et R&eacute;seaux de Distribution</p><p
+class="editoCardType13__date">
+<span>10-11&nbsp;Juin&nbsp;2024</span>
+<span>Classe virtuelle</span></p><p
+class="editoCardType13__subtitle">De la conception &agrave; la r&eacute;alisation</p><p
+class="editoCardType13__label">Travaux Publics</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://evenements.infopro-digital.com/lemoniteur/formation-surelevation-d-immeuble-niveau-1-p-1852"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Formation"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/1/0/4/000118401_300x162_c.jpg" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Formation</span><p
+class="editoCardType13__title">Sur&eacute;l&eacute;vation d&rsquo;immeuble - Niveau 1</p><p
+class="editoCardType13__date">
+<span>22&nbsp;Mai&nbsp;2024</span>
+<span>Classe virtuelle</span></p><p
+class="editoCardType13__subtitle">Appr&eacute;hender les aspects juridiques, financiers et techniques de la sur&eacute;l&eacute;vation</p><p
+class="editoCardType13__label">Techniques de Construction et de R&eacute;habilitation</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://evenements.infopro-digital.com/lemoniteur/formation-conduite-d-operation-phase-2-p-2041"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Formation"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/1/7/0/000118071_300x162_c.jpg" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Formation</span><p
+class="editoCardType13__title">Conduite d'op&eacute;ration - Phase 2</p><p
+class="editoCardType13__date">
+<span>21-22&nbsp;Mai&nbsp;2024</span>
+<span>Paris</span></p><p
+class="editoCardType13__subtitle">Du d&eacute;but des travaux &agrave; la livraison</p><p
+class="editoCardType13__label">Conduite de Chantiers</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://evenements.infopro-digital.com/lemoniteur/formation-suivi-des-chantiers-en-marches-publics-et-prives-p-2050"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Formation"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/1/9/5/000118591_300x162_c.jpg" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Formation</span><p
+class="editoCardType13__title">Suivi des chantiers en march&eacute;s publics et priv&eacute;s</p><p
+class="editoCardType13__date">
+<span>26-27&nbsp;Juin&nbsp;2024</span>
+<span>Paris</span></p><p
+class="editoCardType13__subtitle">Piloter vos chantiers de A &agrave; Z</p><p
+class="editoCardType13__label">Conduite de Chantiers</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a><a
+class="editoCardType13 col-sm-4 editoCardType13--noBorder"
+href="https://evenements.infopro-digital.com/lemoniteur/formation-gerer-les-litiges-et-reclamations-en-fin-de-chantier-p-2068"
+rel="nofollow"
+target="_blank"
+data-xiti-name="Formation"><figure
+class="editoCardType13__imageContainer">
+<img
+src="https://evenements.infopro-digital.com/mediatheque/6/8/6/000118686_300x162_c.jpg" alt="" data-no-lazy=""/></figure><div
+class="editoCardType13__container">
+<span
+class="editoTag editoTag--red">Formation</span><p
+class="editoCardType13__title">G&eacute;rer les litiges et r&eacute;clamations en fin de chantier</p><p
+class="editoCardType13__date">
+<span>23&nbsp;Mai&nbsp;2024</span>
+<span>Lyon</span></p><p
+class="editoCardType13__subtitle">Comment les identifier et les anticiper pour mieux les g&eacute;rer</p><p
+class="editoCardType13__label">Conduite de Chantiers</p></div><div
+class="editoLinkType1 editoLinkType1--grey editoCardType13__bottomLink">Programme et inscription</div>
+</a></div></div><p
+class="is-alignCenter is-marginTop-40 is-marginBottom-0">
+<a
+class="editoLinkType1" data-xiti-name="Toutes les formations" href="https://evenements.infopro-digital.com/lemoniteur/formations/">
+Toutes les formations
+</a></p></div><div
+class="editoContainerType3 is-marginTop-60"><div
+class="editoContainerType1"><div
+class="editoCarouselType1"><div
+class="row" id="jsWebinarsCarousel"><div
+class="webinarInfoCard is-padding-20  col-sm-4"><div
+class="is-flexAlignStart"><p
+class="editoTitleType1 is-marginTop-0 is-marginBottom-20">LES <b>WEBINARS</b></p><ul
+class="editoListType5"><li
+class="editoListType5__item">Inscription <b>100% Gratuite</b></li><li
+class="editoListType5__item"><b>Alertes email</b> avant le webinar</li><li
+class="editoListType5__item">Zone de <b>chat pour vos questions</b></li><li
+class="editoListType5__item">Mise à disposition du <b>replay</b></li></ul>
+<a
+class="editoLinkType1 is-marginTop-40"
+href="/nos-webinars/"
+data-xiti-name="+ 50 Replays disponibles">Voir tous les webinars
+</a></div></div>
+<a
+class="webinarCardV  col-sm-4"
+href="/nos-webinars/renover-une-toiture-terrasse-en-site-occupe-pour-y-installer-une-centrale-solaire.2322032?campaign=Site-maillage"
+target="_blank"
+data-xiti-name="webinar-100064268"><div><figure
+class="webinarCardV__img">
+<img
+src="/mediatheque/9/7/9/002414979_530x300_c.JPG" width="530" height="300"
+alt="Rénover une toiture terrasse en site occupé pour y installer une centrale solaire"
+data-no-lazy=""/></figure><div
+class="webinarCardV__content cardContent"><p
+class="cardContent__title">Rénover une toiture terrasse en site occupé pour y installer une centrale solaire</p><ul
+class="cardContent__list"><li>
+<i
+class="--calendar"></i>
+<span>14 mars 24</span>
+<span>11h00 - 45 min</span></li><li><i
+class="--duration"></i> 45 minutes</li><li><i
+class="--visitors"></i> 367 inscrit(s)</li><li>
+<i
+class="--partner"></i>
+Contenu proposé par <b>RECTICEL</b></li></ul></div></div><div
+class="webinarCardV__btn">S'inscrire au Webinar</div>
+</a>
+<a
+class="webinarCardV  col-sm-4"
+href="/nos-webinars/la-protection-cathodique-dans-le-traitement-de-la-corrosion-des-armatures.2322014?campaign=Site-maillage"
+target="_blank"
+data-xiti-name="webinar-100063016"><div><figure
+class="webinarCardV__img">
+<img
+src="/mediatheque/9/5/9/002414959_530x300_c.jpg" width="530" height="300"
+alt="La protection cathodique dans le traitement de la corrosion des armatures"
+data-no-lazy=""/></figure><div
+class="webinarCardV__content cardContent"><p
+class="cardContent__title">La protection cathodique dans le traitement de la corrosion des armatures</p><ul
+class="cardContent__list"><li>
+<i
+class="--calendar"></i>
+<span>01 février 24</span>
+<span>10h00 - 45 min</span></li><li><i
+class="--duration"></i> 45 minutes</li><li><i
+class="--visitors"></i> 550 inscrit(s)</li><li>
+<i
+class="--partner"></i>
+Contenu proposé par <b>PAREXLANKO</b></li></ul></div></div><div
+class="webinarCardV__btn">Voir le replay</div>
+</a>
+<a
+class="webinarCardV  col-sm-4"
+href="/nos-webinars/osez-les-sols-coules-alliant-design-et-performances.2308918?campaign=Site-maillage"
+target="_blank"
+data-xiti-name="webinar-100059349"><div><figure
+class="webinarCardV__img">
+<img
+src="/mediatheque/3/7/9/002400973_530x300_c.jpg" width="530" height="300"
+alt="Osez les sols coulés alliant design et performances !"
+data-no-lazy=""/></figure><div
+class="webinarCardV__content cardContent"><p
+class="cardContent__title">Osez les sols coulés alliant design et performances !</p><ul
+class="cardContent__list"><li>
+<i
+class="--calendar"></i>
+<span>23 novembre 23</span>
+<span>10h00 - 45 min</span></li><li><i
+class="--duration"></i> 45 minutes</li><li><i
+class="--visitors"></i> 409 inscrit(s)</li><li>
+<i
+class="--partner"></i>
+Contenu proposé par <b>SIKA FRANCE</b></li></ul></div></div><div
+class="webinarCardV__btn">Voir le replay</div>
+</a></div></div></div></div><div
+class="editoContainerType1 is-marginTop-60 is-marginTop-40-M"            data-xiti-chapter2="bloc-bas-page-mes-services"><p
+class="editoTitleType1 editoTitleType1--main is-uppercase">
+Les services de <b
+class="is-lineBreak-Xs">LE MONITEUR</b></p><div
+class="row"><div
+class="editoCardType14
+col-sm-6 editoCardType14--column --kheox"
+data-xiti-chapter1="Emploi"><p
+class="editoCardType14__title">La solution en ligne pour bien construire !</p>
+<a
+class="editoCardType14__link"
+href="https://boutique.lemoniteur.fr/kheox-web.html?CDORIGINE=EDZW308L&utm_source=lemoniteurfr&utm_medium=article&utm_campaign=EDZW308L"
+target="_blank"
+rel="noopener nofollow"
+data-xiti-name="https://boutique.lemoniteur.fr/kheox-web.html?CDORIGINE=EDZW308L&amp;utm_source=lemoniteurfr&amp;utm_medium=article&amp;utm_campaign=EDZW308L">
+<span
+class="editoCardType14__topInfo">KHEOX</span><p
+class="editoCardType14__subtitle">Le service d'information réglementaire et technique en ligne par Afnor et Le Moniteur</p>
+<span
+class="editoCardType14__bottomInfo">JE M'ABONNE EN LIGNE</span>
+</a><div
+class="editoCardType14__infos"><p
+class="editoCardType14__quantity">
+<span
+class="editoCardType14__quantity__number">+ 2 500</span>
+<span
+class="editoCardType14__quantity__label">textes officiels</span></p>
+<a
+class="editoLinkType8"
+href="https://boutique.lemoniteur.fr/kheox-web.html?CDORIGINE=EDZW308L&utm_source=lemoniteurfr&utm_medium=article&utm_campaign=EDZW308L"
+data-xiti-name="Tout voir"
+rel="nofollow"
+target="_blank">Tout voir</a></div><div
+class="editoCardType14__signature">
+<span
+class="is-marginRight-10">Proposé par</span><figure
+class="editoCardType14__signature__figure">
+<img
+src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-original="/images/base-module/document/logo-kheox.jpg" alt=""/></figure></div></div><div
+class="editoCardType14
+col-sm-6 editoCardType14--column --kheox"
+data-xiti-chapter1="Emploi"><p
+class="editoCardType14__title">L'expertise juridique des Editions du Moniteur</p>
+<a
+class="editoCardType14__link"
+href="https://boutique.lemoniteur.fr/moniteur-juris-integral-web.html?CDORIGINE=EDZW308L&utm_source=lemoniteurfr&utm_medium=article&utm_campaign=EDZW308L"
+target="_blank"
+rel="noopener nofollow"
+data-xiti-name="https://boutique.lemoniteur.fr/moniteur-juris-integral-web.html?CDORIGINE=EDZW308L&amp;utm_source=lemoniteurfr&amp;utm_medium=article&amp;utm_campaign=EDZW308L">
+<span
+class="editoCardType14__topInfo">MONITEUR JURIS</span><p
+class="editoCardType14__subtitle">Tout le droit des contrats publics, de l'urbanisme, de l'aménagement et des collectivités décrypté</p>
+<span
+class="editoCardType14__bottomInfo">PROFITEZ DES MEILLEURS EXPERTS EN 1 CLIC !</span>
+</a><div
+class="editoCardType14__infos"><p
+class="editoCardType14__quantity">
+<span
+class="editoCardType14__quantity__number">+ de 40.000</span>
+<span
+class="editoCardType14__quantity__label">textes officiels</span></p>
+<a
+class="editoLinkType8"
+href="https://boutique.lemoniteur.fr/moniteur-juris-integral-web.html?CDORIGINE=EDZW308L&utm_source=lemoniteurfr&utm_medium=article&utm_campaign=EDZW308L"
+data-xiti-name="Tout voir"
+rel="nofollow"
+target="_blank">Tout voir</a></div><div
+class="editoCardType14__signature">
+<span
+class="is-marginRight-10">Proposé par</span><figure
+class="editoCardType14__signature__figure">
+<img
+src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-original="/images/base-module/document/logo-moniteurjuris.png" alt=""/></figure></div></div><div
+class="editoCardType14
+col-sm-6 editoCardType14--column --batiproduits"
+data-xiti-chapter1="Emploi"><p
+class="editoCardType14__title">Trouvez des fournisseurs du BTP !</p>
+<a
+class="editoCardType14__link"
+href="https://www.batiproduits.com/fiche/produits/table-de-preparation-de-commande-p384837500.html"
+target="_blank"
+rel="noopener nofollow"
+data-xiti-name="https://www.batiproduits.com/fiche/produits/table-de-preparation-de-commande-p384837500.html"><p
+class="editoCardType14__subtitle">Table de préparation de commande</p>
+<span
+class="editoCardType14__bottomInfo">NORMEQUIP</span>
+</a><div
+class="editoCardType14__infos"><p
+class="editoCardType14__quantity">
+<span
+class="editoCardType14__quantity__number">+ 240.000</span>
+<span
+class="editoCardType14__quantity__label">produits</span></p>
+<a
+class="editoLinkType8"
+href="https://www.batiproduits.com/"
+data-xiti-name="Tout voir"
+rel="nofollow"
+target="_blank">Tout voir</a></div><div
+class="editoCardType14__signature">
+<span
+class="is-marginRight-10">Proposé par</span><figure
+class="editoCardType14__signature__figure">
+<img
+src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-original="/images/base-module/document/logo-batiproduits.png" alt=""/></figure></div></div><div
+class="editoCardType14
+col-sm-6 editoCardType14--column --mol"
+data-xiti-chapter1="MOL"><p
+class="editoCardType14__title">Détectez vos opportunités d’affaires</p>
+<a
+class="editoCardType14__link"
+href="https://www.marchesonline.com/appels-offres/avis/bas-chantenay-jardin-de-la-carriere-misery-phase-3/ao-9178988-1"
+target="_blank"
+rel="noopener nofollow"
+data-xiti-name="https://www.marchesonline.com/appels-offres/avis/bas-chantenay-jardin-de-la-carriere-misery-phase-3/ao-9178988-1">
+<span
+class="editoCardType14__topInfo">44 - Nantes</span><p
+class="editoCardType14__subtitle">Bas Chantenay - Jardin de la Carrière Misery Phase 3</p>
+</a><div
+class="editoCardType14__infos"><p
+class="editoCardType14__quantity">
+<span
+class="editoCardType14__quantity__number">+ de 10.000</span>
+<span
+class="editoCardType14__quantity__label">avis par jour</span></p>
+<a
+class="editoLinkType8"
+href="https://www.marchesonline.com/appels-offres/en-cours"
+data-xiti-name="Tout voir"
+rel="nofollow"
+target="_blank">Tout voir</a></div><div
+class="editoCardType14__signature">
+<span
+class="is-marginRight-10">Proposé par</span><figure
+class="editoCardType14__signature__figure">
+<img
+src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-original="/images/base-module/document/logo_marche-online.png" alt=""/></figure></div></div></div></div>
+<span
+class="editoDividerType3 editoDividerType3--article"></span><section
+class="editoContainerType1 is-paddingTop-60 is-paddingTop-40-M"><h2 class="editoTitleType1 editoTitleType1--main">ARTICLES <b>LES PLUS LUS</b></h2><ul
+class="editoListType2 editoListType2--column"
+data-xiti-chapter2="bloc-article-plus-lus"><li
+class="editoListType2__item" data-number="1">
+<a
+class="editoLinkType4 editoListType2__label"
+href="/article/terre-cuite-rairies-montrieux-s-emballe-pour-la-robotisation.2252091"
+data-xiti-name="2252091">
+<span>
+Terre cuite : Rairies Montrieux s'emballe pour la robotisation
+</span>
+</a></li><li
+class="editoListType2__item" data-number="2">
+<a
+class="editoLinkType4 editoListType2__label"
+href="/article/jo-2024-le-pont-du-village-des-athletes-mis-en-place.2233027"
+data-xiti-name="2233027">
+<span>
+JO 2024 : le pont du Village des Athlètes mis en place
+</span>
+</a></li><li
+class="editoListType2__item" data-number="3">
+<a
+class="editoLinkType4 editoListType2__label"
+href="/article/logement-les-proprietaires-reduisent-leur-budget-renovation.2274007"
+data-xiti-name="2274007">
+<span>
+Logement : les propriétaires réduisent leur budget rénovation
+</span>
+</a></li><li
+class="editoListType2__item" data-number="4">
+<a
+class="editoLinkType4 editoListType2__label"
+href="/article/les-escrocs-de-la-reno-1-5-comment-les-faux-comptes-maprimerenov-proliferent.2248831"
+data-xiti-name="2248831">
+<span>
+Les escrocs de la réno (1/5) : comment les faux comptes MaPrimeRénov’ prolifèrent
+<span
+class="editoTagType2 editoTagType2--MEI"></span>
+</span>
+</a></li><li
+class="editoListType2__item" data-number="5">
+<a
+class="editoLinkType4 editoListType2__label"
+href="/article/ce-qu-on-sait-sur-l-accident-sur-le-chantier-du-metro-de-toulouse.2325416"
+data-xiti-name="2325416">
+<span>
+Ce qu'on sait de l'accident sur le chantier du métro de Toulouse
+</span>
+</a></li><li
+class="editoListType2__item" data-number="6">
+<a
+class="editoLinkType4 editoListType2__label"
+href="/article/renovation-energetique-les-annonces-choc-du-gouvernement.2276142"
+data-xiti-name="2276142">
+<span>
+Rénovation énergétique 2024 : les annonces choc du Gouvernement
+<span
+class="editoTagType2 editoTagType2--LME_PRINT"></span>
+</span>
+</a></li></ul></section><div
+class="is-paddingTop-40"></div><div
+class="contentSite"><div
+class="contenuPrincipal"></div><footer
+class="footer"><div
+class="footer__bot"><div
+class="footer__bot__follow"><ul
+class="footer__bot__follow__liste"><li><a
+href="/inscription-newsletter" target="_blank" id="jqShareMailBtn"><i
+class="icon-enveloppe"></i></a></li><li><a
+href="https://www.facebook.com/lemoniteur.fr/ " target="_blank" rel="nofollow noopener"><i
+class="icon-facebook"></i></a></li><li><a
+href="https://www.linkedin.com/groups/7470936 " target="_blank" rel="nofollow noopener"><i
+class="icon-linkedin"></i></a></li><li><a
+href="https://twitter.com/Le_Moniteur/ " target="_blank" rel="nofollow noopener"><i
+class="icon-twitter"></i></a></li><li><a
+href="https://www.lemoniteur.fr/rss" target="_blank" rel="nofollow noopener"><i
+class="icon-rss"></i></a></li></ul></div><p
+class="footer__bot__marqueInfopro">
+<span
+class="footer__bot__marqueInfopro__txt">Une marque du groupe</span>
+<a
+class="footer__bot__marqueInfopro__logo" href="http://www.infopro-digital.com/" target="_blank" rel="noopener">
+<img
+class="footer__bot__marqueInfopro__img" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-original="/images/logo-infopro-footer.png" alt="Infopro Digital" border="0" />
+</a></p><ul
+class="footer__bot__toutSavoir"><li><a
+href="https://www.infopro-digital-media.fr/marque/le-moniteur-travaux-publics-batiment/" target="_blank">Publicité</a></li><li><a
+href="/contact">Contacts</a></li><li><a
+href="/mentions-legales">Mentions légales</a></li><li><a
+href="https://www.infopro-digital.com/rgpd-gdpr/fr/" target="_blank" rel="noopener">RGPD</a></li><li><a
+href="javascript:Didomi.preferences.show()">Paramétrage Cookie</a></li></ul></div></footer><div
+class="ad2hsBox jqAd2hsBox is-displayNone">
+<a
+href="#" class="ad2hsBox__link ad2hsBoxLink jqAd2hsBoxLink">
+Ajouter Le Moniteur à l'écran d'accueil
+</a><div
+class="ad2hsBox__btn jqAd2hsBoxBtn"><i
+class="edito-icon-cross"></i></div></div></div> <script type="text/javascript">var pooolConf = {"debug":false,"id":"OWSAD-8QN2N-NLS5X-GCFB9","pageType":"premium","userIsPremium":true,"mode":"custom"};
+        
+                    var advertisementParams = {"networkCode":21799741328,"slotConfigurations":{"pave":{"sizes":"pave","typeAd":"pave"},"paveRestreint":{"sizes":"paveRestreint","typeAd":"pave"},"bannerArche":{"sizes":"bannerArche","typeAd":"ban"},"banner":{"sizes":"banner","typeAd":"ban"},"inread":{"sizes":"inread","typeAd":"inread"},"infeed":{"sizes":"infeed","typeAd":"infeed"}},"targeting":{"devtest":false,"tags":["realisations","education","architecture","paris","france","professionnels","architecture","france","grand-paris-ile-de-france","ile-de-france"],"id_document":"1725759","document_path":"article\/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759","document_parution":"2","document_type":"1","document_closed":true,"document_access":"4","document_source":"2"},"adsDisable":false,"adUnitPath":"document","smartParams":{"siteId":275662,"pageId":1024692,"formats":[{"id":105832,"tagId":"bannerArche_1"},{"id":105829,"tagId":"pave_1"},{"id":105830,"tagId":"pave_2"},{"id":105831,"tagId":"pave_3"},{"id":105833,"tagId":"banner_2"},{"id":105834,"tagId":"infeed_1"},{"id":105835,"tagId":"inread_1"}]},"slotRefresh":{"bannerArche_1":30,"banner_2":30,"infeed_1":30,"inread_1":30,"pave_1":30,"pave_2":30,"pave_3":30,"pave_4":30}};
+        
+
+                    var xitiParams = {"page":{"name":"magazine-article-lycee_un_patio_facette_pour_traiter_la_lumiere_et_le_son.1725759","chapter1":"article","chapter2":"","level2":2},"customVars":{"site":{"1":"anonyme","2":[],"3":"ferm\u00e9","4":"JACQUES-FRANCK DEGIOANNI","5":"20071004","9":"R\u00e9serv\u00e9 Moniteur","17":"flexible-sampling","20":"Moniteur PRINT"}},"identifiedVisitor":{"category":3},"page_vars":{"page_name":"magazine-article-lycee_un_patio_facette_pour_traiter_la_lumiere_et_le_son.1725759","page_chapter1":"article","page_chapter2":"","site_level2":"editorial","tags":"realisations|education|architecture|paris|france|professionnels|grand-paris-ile-de-fra|ile-de-france","statut_article_bo":"R\u00e9serv\u00e9 Moniteur","auteur":"JACQUES-FRANCK DEGIOANNI","date_publication":"2007-10-04 16:07:30","article_consultation":"flexible-sampling","parution":"Moniteur PRINT"},"tags":{"keywords":["realisations","education","architecture","paris","france","professionnels","grand-paris-ile-de-fra","ile-de-france"]}};
+        
+
+                    var dataLayer = dataLayer || [];
+            dataLayer.push({
+                'kameleoonProduct': {"id":1725759,"title":"Lyc\u00e9e Un patio facett\u00e9 pour traiter la lumi\u00e8re et le son","description":"","url":"https:\/\/www.lemoniteur.fr\/article\/lycee-un-patio-facette-pour-traiter-la-lumiere-et-le-son.1725759","protected":true,"parution":"Moniteur PRINT","familles":[{"Rubriques":["R\u00e9alisations","Architecture"]},{"G\u00e9ographique":["Paris","France "]},{"Concept":["Education","Professionnels"]}]}
+            });</script> <script src="/resources/jquery/jquery.min.IPDIGIT1709823702TIGIDPI.js"></script> <script src="/resources/jquery-lazyload/jquery.lazyload.min.IPDIGIT1709823702TIGIDPI.js"></script> <script src="/js/base-module/header-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/base-module/libs/smarttag-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/base-module/lazyload-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/base-module/libs/blockadblock-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/base-module/trackings-min.IPDIGIT1706093827TIGIDPI.js"></script> <script src="/js/base-module/service-loader-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/resources/jquery-validation/jquery.validate.min.IPDIGIT1709823702TIGIDPI.js"></script> <script src="https://cdn.jwplayer.com/libraries/mzmWMXt9.js"></script> <script src="/resources/tiny-slider/tiny-slider-min.IPDIGIT1709823597TIGIDPI.js"></script> <script src="/js/base-module/edito-jQuery-plugins-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/blog-module/social-sharing-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/base-module/social-bar-sticky-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/base-module/edito-document-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/base-module/comment-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/base-module/alert-tag-document-min.IPDIGIT1700230420TIGIDPI.js"></script> <script src="/js/newsletter-module/form-subscribe-min.IPDIGIT1700230424TIGIDPI.js"></script> <script src="/js/user-module/user.IPDIGIT1700230425TIGIDPI.js"></script> <script src="/js/gam-min.IPDIGIT1709823594TIGIDPI.js"></script> <script src="/js/trackings-min.IPDIGIT1709823594TIGIDPI.js"></script> <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6c84580c5c","applicationID":"13942704","transactionName":"ZgFQMUVUV0dZAk0KWF9LcRBEQVZZFwVWAEJcAVwR","queueTime":0,"applicationTime":113,"atts":"SkZHRw1ORBgaABtZTEwZ","errorBeacon":"bam.nr-data.net","agent":""}</script></body></html>

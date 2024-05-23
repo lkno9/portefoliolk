@@ -1,0 +1,139 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a1817;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo indépendant */
+.logoP {
+    position: absolute;
+    top: 2em;
+    left: 20px;
+    width: 12em;
+    height: 10em;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5em;
+}
+
+nav ul li:hover {
+    border-bottom: solid 1px white;
+    color: gold;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sous-menus */
+.sous-menu1, .sous-menu2, .sous-menu3, .sous-menu4 {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li:hover .sous-menu1,
+nav ul li:hover .sous-menu2,
+nav ul li:hover .sous-menu3,
+nav ul li:hover .sous-menu4 {
+    display: block;
+}
+
+.sous-menu1 a, .sous-menu2 a, .sous-menu3 a, .sous-menu4 a {
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+}
+
+.sous-menu1 a:hover, .sous-menu2 a:hover, .sous-menu3 a:hover, .sous-menu4 a:hover {
+    color: gold;
+}
+
+/* Container */
+.container {
+    width: 80%; /* Définit une largeur pour le conteneur principal */
+    max-width: 1200px; /* Maximum width to ensure content doesn't get too stretched */
+    margin: auto; /* Centre le conteneur sur la page */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments verticalement */
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+
+.header h1 {
+    color: #fff;
+}
+
+/* Expériences */
+#experiences {
+    width: 100%; /* Utilise toute la largeur du conteneur */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espacement entre les expériences */
+}
+
+.experience {
+    flex: 1 1 290px; /* Permet aux blocs de s'ajuster en largeur avec une base de 290px */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: darkslategrey; /* Fond pour distinguer chaque expérience */
+    color: #ffffff; /* Couleur du texte pour une bonne lisibilité */
+    transition: transform 0.3s ease;
+}
+
+.experience img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.experience:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.details h3, .details p, .details a {
+    margin-bottom: 10px;
+}
+
+.details a {
+    display: inline-block; /* Permet le survol sur les liens */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10
+}
+
+span{
+    color: darkolivegreen;
+}

@@ -1,0 +1,206 @@
+/* Style global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('hello\ word.gif'); /* Vérifiez le chemin de l'image */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Logo indépendant */
+.logoP {
+    position: absolute;
+    top: 2em;
+    left: 20px;
+    width: 12em;
+    height: 10em;
+    animation: spin 2s linear infinite;
+}
+
+/*@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}*/
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5em;
+}
+
+nav ul li:hover{
+    border-bottom: solid 1px white;
+    color: gold;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sous-menus */
+.sous-menu1, .sous-menu2, .sous-menu3, .sous-menu4 {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
+nav ul li:hover .sous-menu1,
+nav ul li:hover .sous-menu2,
+nav ul li:hover .sous-menu3,
+nav ul li:hover .sous-menu4 {
+    display: block;
+}
+
+.sous-menu1 a, .sous-menu2 a, .sous-menu3 a, .sous-menu4 a {
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+
+}
+
+
+.sous-menu1 a:hover, .sous-menu2 a:hover, .sous-menu3 a:hover, .sous-menu4 a:hover {
+    color: gold;
+}
+
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding-top: 19em;
+}
+
+.print { color: gold; }
+.iam { color: green; }
+.t1 { color: white;
+     padding-top: 10em;}
+
+     #profil {
+        /* Assurez-vous que la section profil est suffisamment large pour contenir l'image et le texte */
+        display: block;
+        overflow: hidden; /* Efface le flottement des éléments à l'intérieur */
+        /*background-image: url(terminal-monitor.gif);
+        background-size: cover;*/
+        color: white;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color:#0B1917;
+
+    }
+    
+    .profil .T2 {
+        /* Le titre est centré en haut de la section profil */
+        text-align: center;
+        width: 100%;
+    }
+    
+    .imgE {
+        /* L'image flotte à gauche pour que le texte puisse s'afficher à droite */
+        float: left;
+        margin-right: 20px; /* Ajoutez de l'espace entre l'image et le texte */
+        border-radius: 5px; /* Optionnel pour les coins arrondis */
+    }
+    /* Styles for the image within the .ace div */
+
+    .aceof {
+        height: 10em;
+        width: 10em;
+   }
+
+   .ace{
+    padding-left: 80em;
+   }
+
+
+
+     .Img11 {
+        width: 32em;
+        height: 30em;
+        border: solid white;
+        border-radius: 5px;
+     }
+    
+    .txt {
+        padding-top: 10em;
+        /* Le texte prendra l'espace restant à droite de l'image */
+        overflow: hidden; /* Empêche le texte de s'enrouler sous l'image si elle est trop haute */
+        padding-right: 5em;
+        padding-left: 3em;
+    }
+    
+    .txt p {
+        margin-bottom: 15px; /* Espace entre les paragraphes */
+        text-align: justify;
+    }
+    
+    /* Ajout d'une marge supplémentaire après le premier paragraphe pour créer un espace */
+    .txt p:first-of-type {
+        margin-bottom: 30px; /* Double de l'espace entre les paragraphes */
+    }
+    
+    
+/* Styles pour le pied de page */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0B1917;
+}
+
+
+/* Styles pour les réseaux sociaux */
+.réseaux img {
+    width: 10em;
+    height: 10em;
+    margin: 0 10px;
+}
+
+
+/* Styles pour le rapport de stage */
+.tR{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.introd{
+    padding-left: 15em;
+    padding-right: 15em;
+    color: white;
+    border:white solid;
+    border-radius: 2px;
+    background-color: #0B1917;
+}
+

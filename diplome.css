@@ -1,0 +1,123 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a1817;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo indépendant */
+.logoP {
+    position: absolute;
+    top: 2em;
+    left: 20px;
+    width: 12em;
+    height: auto;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5em;
+}
+
+nav ul li:hover {
+    border-bottom: solid 1px white;
+    color: gold;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 10px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Sous-menus */
+.sous-menu1, .sous-menu2, .sous-menu3, .sous-menu4 {
+    display: none;
+    position: absolute;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul li:hover .sous-menu1,
+nav ul li:hover .sous-menu2,
+nav ul li:hover .sous-menu3,
+nav ul li:hover .sous-menu4 {
+    display: block;
+}
+
+.sous-menu1 a, .sous-menu2 a, .sous-menu3 a, .sous-menu4 a {
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+}
+
+.sous-menu1 a:hover, .sous-menu2 a:hover, .sous-menu3 a:hover, .sous-menu4 a:hover {
+    color: gold;
+}
+
+/* Section diplome */
+.diplome {
+    padding: 10em 3em 3em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+.diploma-item {
+    text-align: center;
+    color: white;
+}
+
+
+.diploma-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.diploma-text {
+    border-radius: 1em;
+    border:  solid rgba(255, 255, 255, 0.2); /* Transparent border */
+    padding: 1em;
+    margin-top: 1em;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+/* Title for the main page */
+.main-title {
+  text-align: center;
+  padding-top: 5yem;
+
+}
